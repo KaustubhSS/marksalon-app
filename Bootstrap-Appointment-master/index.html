@@ -1,0 +1,777 @@
+
+<head>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<style>
+@media (max-width: 700px){
+.container {
+    width: 100%;
+}
+}
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .container {
+    width: 100%;
+}
+.mobilehide{
+    display:none;
+}
+.navbar-brand{
+        padding: 5px 15px !important;
+}
+}
+
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .container {
+    width: 100%;
+}
+.mobilehide{
+    display:none;
+}
+.navbar-brand{
+        padding: 5px 15px !important;
+}
+}
+
+
+.c-box-1 {
+    background-color: #3b94ed;
+}
+.c-box-2 {
+    background-color: #2b87e4;
+}
+.c-box-3 {
+    background-color: #207fdd;
+}
+.coloumn {
+    padding: 50px 30px;
+    color: #fff;
+    min-height: 351px;
+}
+.coloumn h3 {
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+.coloumn p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.h3, h3 {
+    font-size: 24px;
+}
+p {
+    margin: 0 0 10px;
+
+}
+
+.coloumn .table>tbody>tr>td {
+    padding: 10px 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 0;
+    border-bottom: 1px dotted rgba(255,255,255,0.2);
+}
+.text-right {
+    text-align: right;
+}
+.coloumn h1 {
+    margin-top: 0;
+    font-weight: 600;
+}
+.h1, h1 {
+    font-size: 36px;
+}
+.thm-btn {
+    background: #207fdd;
+    border-radius: 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
+.coloumn ul li {
+    padding: 8px 0;
+}
+@media (min-width: 768px){
+.grid-inner .my-row {
+    margin: 0;
+}
+}
+
+
+@media (min-width: 768px){
+.grid-inner .my-padding {
+    padding: 0;
+}}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+     border: 0px solid transparent;
+}
+body {
+
+    color: white !important;
+    background-color: #1b1e21 !important;
+    }
+</style>
+
+
+
+
+<div class="fixed-top">
+ <!-- <header class="topbar">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-12">
+            <ul class="social-network">
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+  </header>-->
+  <nav class="navbar navbar-expand-lg navbar-dark mx-background-top-linear">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="color: white;    font-weight: 900;text-transform: uppercase;">Tyler Caulder - Mechanic</a>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+
+            <ul class="social-network" style="    font-size: 24px;">
+               <div class="mobilehide"> Email: Tyler@gmail.com </div>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-pinterest"></i></a></li>
+              <li><a class="waves-effect waves-dark" href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+ <div class="container">
+            <div class="row" style="
+    background-color: #2b87e4;
+    color: white;
+">
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2>Need a Mechanic?<br> Book an Appointment.</h2>
+                        </div>
+                        <form>
+                            <!-- Form start -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input id="email" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date">Preferred Date</label>
+                                        <input id="date" name="date" type="text" placeholder="Preferred Date" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time">Preferred Time</label>
+                                        <select id="time" name="time" class="form-control">
+                                            <option value="Morning">Morning</option>
+                                            <option value="Noon">Noon</option>
+                                            <option value="Evening">Evening</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor">Appointment For</label>
+                                        <select id="appointmentfor" name="appointmentfor" class="form-control">
+                                            <option value="Service#1">Service#1</option>
+                                            <option value="Service#2">Service#2</option>
+                                            <option value="Service#3">Service#3</option>
+                                            <option value="Service#4">Service#4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button id="singlebutton" name="singlebutton" class="btn btn-default">Make An Appointment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- form end -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2>General Prices for Services</h2>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 1 - Short Description of service - $100</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Integer nec nisi sed mi hendrerit mattis. Vestibulum mi nunc, ultricies quis vehicula et, iaculis in magnestibulum.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 2 - Short Description of service - $100</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Aliquam sit amet mi eu libero fermentum bibendum pulvinar a turpis. Vestibulum quis feugiat risus. </p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 3 - Short Description of service - $300</h4>
+                                <div class="feature-content">
+                                    <!--<p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 4 - Short Description of service - $200</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 5 - Short Description of service - $500</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 6 - Short Description of service - $200</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 7 - Short Description of service - $100</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 8 - Short Description of service - $160</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 9 - Short Description of service - $300</h4>
+                                <div class="feature-content">
+                                   <!-- <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title">Service 10 - Short Description of service - $900</h4><br>
+                                <div class="feature-content">
+                                   <!-- <p>Praesent eu sollicitudin nunc. Cras malesuada vel nisi consequat pretium. Integer auctor elementum nulla suscipit in.</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<style>
+@media (min-width: 992px){
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+}
+@media (min-width: 992px){
+.col-md-6 {
+    width: 50%;
+}
+}
+.title-block {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:20px;
+}
+.title-block h3 {
+    margin-top: 0;
+    font-weight: 800;
+    color: #000;
+    letter-spacing: 0.3px;
+    margin-bottom: 5px;
+}
+.h3, h3 {
+    font-size: 24px;
+}
+.title-block p {
+    font-size: 15px;
+}
+</style>
+<div class="row">
+                    <!-- Main Title -->
+<div class="col-sm-6 col-md-4 mobilehide">
+
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-stethoscope-1 icon-color-2 hvr-buzz-out"></i>
+                            </div>
+<div class="title-block">
+                            <h3 style="color: white !important;">Services I Offer</h3>
+                            <p>I am able to offer a wide range of mechanic help</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4  mobilehide">
+
+                    </div>
+                </div>
+
+
+            <div class="row">
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-ambulance-1 icon-color-1 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 1</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-stethoscope-1 icon-color-2 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 2</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-telephone icon-color-3 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 3</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-medical-2 icon-color-4 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 4</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-pulse icon-color-5 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 5</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-molar-1 icon-color-6 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 6</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-stethoscope-1 icon-color-7 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 7</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-medical icon-color-8 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 8</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 hidden-sm" style="
+    border-style: solid;
+    border-color: #2b87e4;
+    border-width: thick;
+">
+                        <div class="service-grid">
+                            <div class="service-icon">
+                                <i class="flaticon-heart icon-color-9 hvr-buzz-out"></i>
+                            </div>
+                            <div class="service-text">
+                                <h4>Service 9</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+<br><br><br>
+
+
+
+<div class="row my-row">
+                    <!-- Service List -->
+                    <div class="col-sm-4 my-padding" style="padding: 0px;">
+                        <div class="coloumn c-box-1">
+                            <h1>Our services list</h1><br><br>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                                to make a type specimen book.</p>
+                            <a href="#service" class="thm-btn page-scroll">View all Services</a>
+                        </div>
+                    </div>
+                    <!-- Benefits -->
+                    <div class="col-sm-4 my-padding" style="padding: 0px;">
+                        <div class="coloumn c-box-2">
+                            <h3>Benefits</h3>
+                            <p>It is a long established fact that mechanic shops are costly. Having a personal mechanic is the best choice for most repairs</p>
+                            <ul>
+                                <li><i class="fa fa-caret-right"></i>I'm a Qualified Mechanic  </li>
+                                <li><i class="fa fa-caret-right"></i>Been working on cars for 15 years</li>
+                                <li><i class="fa fa-caret-right"></i>Buy / Supply your own parts</li>
+                                <li><i class="fa fa-caret-right"></i>I can travel to you</li>
+                                <li><i class="fa fa-caret-right"></i>Guarenteed to Save Money</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Working Hours -->
+                    <div class="col-sm-4 my-padding" style="padding: 0px;">
+                        <div class="coloumn c-box-3">
+                            <h3>Working Hours</h3>
+                            <p>My usual hours I'm free are listed below.</p>
+                            <table class="table" style="color: white;">
+                                <tbody>
+                                    <tr>
+                                        <td>Monday-Wednesday</td>
+                                        <td class="text-right">08.00-18.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thursday -Friday</td>
+                                        <td class="text-right">08.00-18.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday</td>
+                                        <td class="text-right">08.00-18.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sunday</td>
+                                        <td class="text-right">Closed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <style>
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #f7f7f7;
+}
+.navbar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/*
+headeer top
+*/
+.topbar{
+  background-color: #212529;
+  padding: 0;
+}
+
+.topbar .container .row {
+  margin:-7px;
+  padding:0;
+}
+
+.topbar .container .row .col-md-12 {
+  padding:0;
+}
+
+.topbar p{
+  margin:0;
+  display:inline-block;
+  font-size: 13px;
+  color: #f1f6ff;
+}
+
+.topbar p > i{
+  margin-right:5px;
+}
+.topbar p:last-child{
+  text-align:right;
+}
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+.topbar li.topbar {
+    display: inline;
+    padding-right: 18px;
+    line-height: 52px;
+    transition: all .3s linear;
+}
+
+.topbar li.topbar:hover {
+    color: #1bbde8;
+}
+
+.topbar ul.info i {
+    color: #131313;
+    font-style: normal;
+    margin-right: 8px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.topbar ul.info li {
+    float: right;
+    padding-left: 30px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 44px;
+}
+
+.topbar ul.info i span {
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 50px;
+    padding-left: 18px;
+}
+
+ul.social-network {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+ul.social-network li {
+  border:none;
+  margin:0;
+}
+
+ul.social-network li i {
+  margin:0;
+}
+
+ul.social-network li {
+    display:inline;
+    margin: 0 5px;
+    border: 0px solid #2D2D2D;
+    padding: 5px 0 0;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    vertical-align: baseline;
+    color: #000;
+}
+
+ul.social-network {
+  list-style: none;
+  margin: 5px 0 10px -25px;
+  float: right;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: .3s ease-out;
+    color: #fff;
+}
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+.bg-image-full {
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.bg-dark {
+    background-color: #222!important;
+}
+
+.mx-background-top-linear {
+    background: -webkit-linear-gradient(45deg, #207fdd 48%, #1b1e21 48%);
+    background: -webkit-linear-gradient(left, #207fdd 48%, #1b1e21 48%);
+    background: linear-gradient(45deg, #207fdd 48%, #1b1e21 48%);
+}
+
+    </style>
+</body>
