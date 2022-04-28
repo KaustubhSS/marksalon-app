@@ -1,0 +1,49 @@
+
+body{
+background-image: url('bg.jpg'); background-repeat: no-repeat; background-size: cover;
+
+}
+
+
+mark {
+  background-color: white;
+  color: red;
+}
+
+.text{
+
+font-family: sans-serif;
+color: #FBE4AE;
+font-size: 20px;
+
+
+}
+
+.text h2{
+background: #795548; color:#fff;
+text-align: center;
+}
+
+.description{
+
+color:red;
+opacity: 0.5;
+}
+
+.contact{
+color: #fff;
+font-size: 30px;
+}
+
+a[target]{
+ color:red;
+ text-decoration: none
+}
+
+a:hover{
+ background-color: black;
+}
+
+p::first-letter{
+font-size:40px; color: red; font-weight: bold;
+}

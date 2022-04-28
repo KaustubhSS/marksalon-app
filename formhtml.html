@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="form.css">
+<script src="form.js"></script>
+</head>
+<body>
+
+<center><h2 style="background-color:#ffff; opacity:0.8;">FEEDBACK FORM</h2></center>
+<div class="container">
+<form onsubmit="return Validate(this);">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname"><b>First Name:</b></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your First name.." required autocomplete=off  pattern="[A-Za-z]{1,}">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname"><b>Last Name:</b></label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your Last name.." required autocomplete=off pattern="[A-Za-z]{1,}">
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-25">
+        <label for="email"><b>E-Mail Id:</b></label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="mailid" placeholder="Your E-mail id.." required autocomplete=off pattern="{1,}">
+      </div>
+    </div>
+  <div class="row">
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="feed_back"><b>Feed Back:</b></label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px;resize:none;"   required autocomplete=off pattern="[A-Za-z]{1,}"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+</div>
+  <div class="text-block">
+    <h4 style="font-size:40px;">Your Feedback is valuable to us!</h4>
+  </div>
+</body>
+</html>
